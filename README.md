@@ -1,4 +1,4 @@
-# PubNub Remote Debugger : an easy way to debug your mobile web app
+# PubNub Remote Debugger : An easy way to debug your mobile web app
 
 This tool allows you to easily debug any app on a remote device. Main features are : 
 * Automatically display all the "console.log" events from the remote device app in your local browser.
