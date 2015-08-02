@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Remote Logger</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="http://cdn.pubnub.com/pubnub-3.7.13.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/console-listener.js"></script>
+        <script src="js/scripts.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top header">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Remote Logger</a>
+                </div>
+            </div>
+        </nav>
+        <div class="navbar navbar-default" id="subnav">
+            <div class="col-md-12">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--main-->
+        <div class="container" id="main">
+            <div class="panel panel-default col-xl-8 col-lg-8 col-md-8 col-sm-9 main-console">
+                <h4>Main Console
+                <div class="pull-right collapse navbar-collapse" id="navbar-collapse1">
+                    <div class="input-group" style="max-width:470px;">
+                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    </div>
+                </div>
+                </h4>
+<pre>
+                <div class="well live-logger">
+                </div>
+</pre>
+            </div>
+            <!--small-->
+            <div class="">
+                <div class="col-md-4 col-sm-3 col-xl-4 col-lg-4">
+                    <!-- 1 -->
+                    <div class="panel panel-default side-section-container">
+                        <div class="panel-heading"> <h4>Connected Users</h4></div>
+                        <div class="panel-body">
+                            <div class="connected-users-list btn btn-success pull-left">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="panel panel-default well side-section-container">
+                        <h4>Send Query</h4>
+                        <h6>Type javascript to run at the remote device</h6>
+                        <textarea class="form-control message-textarea" placeholder="$('body').('display', 'none');
+                        alert('Haha!');" ></textarea>
+                        <button class="submit-message btn btn-success pull-left" type="button">Submit</button>
+                    </div>
+                    <!-- 3 -->
+                    <div class="panel panel-default side-section-container">
+                        <div class="panel-heading">
+                            <h4>Session</h4>
+                            <div class="unsubscribe-from-channel btn btn-danger pull-left">
+                                End Session
+                            </div>
+                            <!-- <div class="close-all-open-sessions btn btn-danger pull-right">
+                                Close All Sessions
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
