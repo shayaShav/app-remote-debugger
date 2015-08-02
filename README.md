@@ -4,6 +4,9 @@ This tool allow you to easily debug any web app from a remote device. Main featu
 * Automatically display all the "console.log" events from the remote device web app in your local browser.
 * Send JS function & scripts to the remote device web app through your local browser.
 
+#Online demo :
+http://lynxpeer.com/debugger
+
 #What is it good for?
 Developing mobile web apps often requires debugging, and that when it's getting dirty : in order to view the console logs from your mobile web app you'll usually have to install heavy debuggers or plugins.
 PubNub Remote Debugger provide easy solution to that problem - it enables you to see every console log from your mobile device right on your browser window.
